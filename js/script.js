@@ -161,8 +161,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const aiCards = document.querySelectorAll('.ai-card');
     aiCards.forEach((card, index) => {
         card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = `opacity 0.6s ease-out ${index * 0.15}s, transform 0.6s ease-out ${index * 0.15}s`;
+        card.style.transform = 'translateY(40px) scale(0.97)';
+        card.style.transition = `opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${index * 0.2}s, transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${index * 0.2}s`;
         observer.observe(card);
     });
 
