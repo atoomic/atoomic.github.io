@@ -28,6 +28,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Typing effect for hero role
+    const heroRole = document.getElementById('hero-role');
+    if (heroRole) {
+        const fullText = heroRole.textContent;
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!prefersReducedMotion) {
+            heroRole.textContent = '';
+            const cursor = document.createElement('span');
+            cursor.className = 'typing-cursor';
+            cursor.setAttribute('aria-hidden', 'true');
+            heroRole.appendChild(cursor);
+
+            let charIndex = 0;
+            const typeInterval = setInterval(function() {
+                if (charIndex < fullText.length) {
+                    heroRole.insertBefore(
+                        document.createTextNode(fullText.charAt(charIndex)),
+                        cursor
+                    );
+                    charIndex++;
+                } else {
+                    clearInterval(typeInterval);
+                    setTimeout(function() {
+                        cursor.classList.add('fade-out');
+                        setTimeout(function() {
+                            cursor.remove();
+                        }, 500);
+                    }, 2000);
+                }
+            }, 60);
+        }
+    }
+
     // Handle contact form submission
     const contactForm = document.getElementById('contactForm');
     
@@ -123,6 +157,15 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
 
+    // Observe AI cards
+    const aiCards = document.querySelectorAll('.ai-card');
+    aiCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = `opacity 0.6s ease-out ${index * 0.15}s, transform 0.6s ease-out ${index * 0.15}s`;
+        observer.observe(card);
+    });
+
     // Observe timeline items
     const timelineItems = document.querySelectorAll('.timeline-item');
     timelineItems.forEach((item, index) => {
@@ -140,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Navigate sections with arrow keys
-        const sections = ['hero', 'about', 'experience', 'skills', 'opensource', 'writing', 'contact'];
+        const sections = ['hero', 'about', 'experience', 'skills', 'ai-capabilities', 'opensource', 'writing', 'contact'];
         const currentSection = getCurrentSection();
         const currentIndex = sections.indexOf(currentSection);
 
