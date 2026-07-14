@@ -9,6 +9,26 @@ const mobileMenu = document.getElementById("mobile-menu");
 const contactForm = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
 const currentYear = document.getElementById("current-year");
+const contactEmailLink = document.getElementById("contact-email-link");
+const contactEmailText = document.getElementById("contact-email-text");
+
+// Contact email is stored obfuscated — each character code shifted by
+// EMAIL_OFFSET — and reconstructed at runtime so the address never appears in
+// plaintext in any served file. Static/regex email scrapers see nothing.
+const EMAIL_OFFSET = 5;
+const ENCODED_EMAIL = [115,110,104,116,113,102,120,69,102,121,116,116,114,110,104,51,116,119,108];
+
+function decodeEmail(encoded, offset) {
+  return encoded.map((code) => String.fromCharCode(code - offset)).join("");
+}
+
+const CONTACT_EMAIL = decodeEmail(ENCODED_EMAIL, EMAIL_OFFSET);
+
+if (contactEmailLink && contactEmailText) {
+  contactEmailLink.href = `mailto:${CONTACT_EMAIL}`;
+  contactEmailText.textContent = CONTACT_EMAIL;
+  contactEmailLink.setAttribute("aria-label", `Email Nicolas — ${CONTACT_EMAIL}`);
+}
 
 const allNavigationLinks = [
   ...document.querySelectorAll('a.nav-link[href^="#"]')
@@ -240,28 +260,68 @@ filterButtons.forEach((button) => {
 });
 
 const skillGroups = document.querySelectorAll(".skill-group");
+const defaultGroup = skillGroups[0]; // first panel = resting state
+const HOVER_CLOSE_DELAY = 400; // ms — delay before closing to avoid flicker
+const supportsHover =
+  window.matchMedia &&
+  window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+// Single source of truth: open exactly one group (or none when group === null).
+function setOpen(group) {
+  skillGroups.forEach((candidateGroup) => {
+    const isOpen = candidateGroup === group;
+
+    candidateGroup.classList.toggle("open", isOpen);
+
+    candidateGroup
+      .querySelector(".skill-group-button")
+      .setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+}
+
+let closeTimer = null;
+
+function cancelClose() {
+  if (closeTimer) {
+    clearTimeout(closeTimer);
+    closeTimer = null;
+  }
+}
+
+function scheduleClose() {
+  cancelClose();
+  closeTimer = setTimeout(() => setOpen(defaultGroup), HOVER_CLOSE_DELAY);
+}
 
 skillGroups.forEach((group) => {
   const button = group.querySelector(".skill-group-button");
 
+  // Touch / non-hover devices: keep the original click accordion.
   button.addEventListener("click", () => {
+    if (supportsHover) return; // hover drives the open state on pointer devices
+
     const willOpen = !group.classList.contains("open");
 
-    skillGroups.forEach((candidateGroup) => {
-      candidateGroup.classList.remove("open");
-
-      const candidateButton = candidateGroup.querySelector(
-        ".skill-group-button"
-      );
-
-      candidateButton.setAttribute("aria-expanded", "false");
-    });
-
-    if (willOpen) {
-      group.classList.add("open");
-      button.setAttribute("aria-expanded", "true");
-    }
+    setOpen(willOpen ? group : null);
   });
+
+  if (!supportsHover) return;
+
+  // Pointer devices: hover opens (accordion), with a delayed return to the
+  // default panel. Entering any panel cancels a pending close, so moving
+  // across the gaps between panels doesn't flicker.
+  group.addEventListener("mouseenter", () => {
+    cancelClose();
+    setOpen(group);
+  });
+  group.addEventListener("mouseleave", scheduleClose);
+
+  // Keyboard parity: focusing a header opens it; leaving schedules the return.
+  button.addEventListener("focus", () => {
+    cancelClose();
+    setOpen(group);
+  });
+  button.addEventListener("blur", scheduleClose);
 });
 
 function isValidEmail(value) {
@@ -305,7 +365,7 @@ contactForm.addEventListener("submit", (event) => {
     "Opening your email application…";
 
   window.location.href =
-    `mailto:nicolas@atoomic.org?subject=${emailSubject}&body=${emailBody}`;
+    `mailto:${CONTACT_EMAIL}?subject=${emailSubject}&body=${emailBody}`;
 });
 
 currentYear.textContent = String(new Date().getFullYear());

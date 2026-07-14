@@ -18,8 +18,8 @@
   <meta name="theme-color" content="#090b10" />
   <link rel="canonical" href="https://atoomic.org/" />
 
-  <link rel="icon" type="image/png" href="/images/ico.png" />
-  <link rel="apple-touch-icon" href="/images/ico.png" />
+  <link rel="icon" type="image/png" href="images/ico.png" />
+  <link rel="apple-touch-icon" href="images/ico.png" />
 
   <meta property="og:type" content="website" />
   <meta
@@ -65,7 +65,7 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
   <script type="application/ld+json">
   {
@@ -100,6 +100,7 @@
           "addressCountry": "US"
         },
         "nationality": { "@type": "Country", "name": "France" },
+        "knowsLanguage": ["en", "fr"],
         "knowsAbout": [
           "Agentic Orchestration",
           "AI-Driven Engineering",
@@ -133,7 +134,49 @@
         "url": "https://atoomic.org/",
         "name": "Nicolas R. — atoomic",
         "description": "Portfolio of Nicolas R. (atoomic) — technology leader specializing in agentic orchestration and AI-driven engineering.",
-        "author": { "@id": "https://atoomic.org/#person" }
+        "inLanguage": "en",
+        "author": { "@id": "https://atoomic.org/#person" },
+        "publisher": { "@id": "https://atoomic.org/#person" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://atoomic.org/#faq",
+        "url": "https://atoomic.org/#faq",
+        "inLanguage": "en",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is Nicolas R. (atoomic)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nicolas R. — known online as atoomic — is a technology leader specializing in agentic orchestration, AI-assisted engineering, and low-level systems work in Perl and XS. He leads a department at WebPros and is a long-time CPAN author and open-source contributor to the Perl toolchain."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Nicolas R. specialize in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "His work centers on agentic orchestration, AI-assisted development, and retrieval-augmented generation (RAG) systems, combined with deep systems expertise in Perl, XS, memory profiling, and hosting-platform engineering."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can I find Nicolas R.'s open-source work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "His open-source work is on GitHub at github.com/atoomic and on MetaCPAN under the author ID ATOOMIC, including production Perl modules and contributions to the Perl toolchain."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I contact Nicolas R.?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the contact form on this site, or reach out via LinkedIn or GitHub. A downloadable résumé is also available from the site navigation."
+            }
+          }
+        ]
       }
     ]
   }
@@ -155,7 +198,14 @@
   <header class="site-header" id="site-header">
     <div class="container navbar">
       <a class="brand" href="#home" aria-label="Atoomic home">
-        <span class="brand-mark" aria-hidden="true">☢</span>
+        <span class="brand-mark" aria-hidden="true">
+          <svg class="brand-mark-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="12" fill="currentColor" />
+            <path d="M44 39.61 L29 13.63 A42 42 0 0 1 71 13.63 L56 39.61 A12 12 0 0 0 44 39.61 Z" fill="currentColor" />
+            <path d="M62 50 L92 50 A42 42 0 0 1 71 86.37 L56 60.39 A12 12 0 0 0 62 50 Z" fill="currentColor" />
+            <path d="M44 60.39 L29 86.37 A42 42 0 0 1 8 50 L38 50 A12 12 0 0 0 44 60.39 Z" fill="currentColor" />
+          </svg>
+        </span>
         <span class="brand-text">atoomic<span style="color: var(--accent)">.</span></span>
       </a>
 
@@ -224,11 +274,6 @@
 
       <div class="container hero-grid">
         <div class="hero-content">
-          <div class="status-pill reveal">
-            <span class="status-dot" aria-hidden="true"></span>
-            Technology leadership · Utah, USA
-          </div>
-
           <h1 class="hero-title reveal">
             <span class="line">Engineering</span>
             <span class="line accent-line">intelligence.</span>
@@ -248,7 +293,14 @@
               </svg>
             </a>
 
-            <a class="button" href="#contact">Start a conversation</a>
+            <a class="button" href="https://raw.githubusercontent.com/atoomic/atoomic.github.io/master/n_rochelemagne-resume.pdf" target="_blank" rel="noopener noreferrer">
+              Download my Resume
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                <path d="M12 3v12" />
+                <path d="m7 11 5 5 5-5" />
+                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+              </svg>
+            </a>
           </div>
 
           <div class="hero-socials reveal" aria-label="Social links">
@@ -264,7 +316,7 @@
             <img
               class="portrait"
               src="images/author.jpg"
-              alt="Nicolas R."
+              alt="Nicolas R. (atoomic) — technology leader in agentic orchestration and AI-driven engineering"
               width="1000"
               height="1000"
               fetchpriority="high"
@@ -926,6 +978,63 @@
       </div>
     </section>
 
+    <section class="section section-tight" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <p class="eyebrow reveal">FAQ</p>
+        <h2 class="section-title reveal" id="faq-title">
+          Frequently asked<br />
+          <span class="text-gradient">questions.</span>
+        </h2>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary><span>Who is Nicolas R. (atoomic)?</span></summary>
+            <div class="faq-answer">
+              Nicolas R. — known online as <strong>atoomic</strong> — is a
+              technology leader specializing in agentic orchestration,
+              AI-assisted engineering, and low-level systems work in Perl and XS.
+              He leads a department at WebPros and is a long-time CPAN author and
+              open-source contributor to the Perl toolchain.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary><span>What does Nicolas R. specialize in?</span></summary>
+            <div class="faq-answer">
+              His work centers on agentic orchestration, AI-assisted development,
+              and retrieval-augmented generation (RAG) systems, combined with deep
+              systems expertise in Perl, XS, memory profiling, and
+              hosting-platform engineering.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary><span>Where can I find Nicolas R.'s open-source work?</span></summary>
+            <div class="faq-answer">
+              His open-source work lives on
+              <a href="https://github.com/atoomic" target="_blank" rel="noopener noreferrer">GitHub</a>
+              and on
+              <a href="https://metacpan.org/author/ATOOMIC" target="_blank" rel="noopener noreferrer">MetaCPAN</a>
+              under the author ID <strong>ATOOMIC</strong>, including production
+              Perl modules and contributions to the Perl toolchain.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary><span>How can I contact Nicolas R.?</span></summary>
+            <div class="faq-answer">
+              Use the <a href="#contact">contact form</a> on this site, or reach
+              out via
+              <a href="https://www.linkedin.com/in/nicolas-rochelemagne-71b4722/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              or
+              <a href="https://github.com/atoomic" target="_blank" rel="noopener noreferrer">GitHub</a>.
+              A downloadable résumé is also available from the site navigation.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="contact">
       <div class="container">
         <div class="contact-panel reveal">
@@ -943,12 +1052,15 @@
                 Send a note.
               </p>
 
-              <a class="contact-direct" href="mailto:nicolas@atoomic.org">
-                nicolas@atoomic.org
+              <a class="contact-direct" id="contact-email-link" href="#contact" aria-label="Email Nicolas (requires JavaScript)">
+                <span id="contact-email-text">Enable JavaScript to view email</span>
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
                   <path d="M7 17 17 7M7 7h10v10" />
                 </svg>
               </a>
+              <noscript>
+                <p class="contact-noscript">Enable JavaScript to reveal the email, or reach me on <a href="https://www.linkedin.com/in/nicolas-rochelemagne/">LinkedIn</a>.</p>
+              </noscript>
             </div>
 
             <form class="contact-form" id="contact-form" novalidate>
@@ -993,7 +1105,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-copy">
-        © <span id="current-year"></span> Nicolas R. · Built with HTML, CSS & JavaScript.
+        © <span id="current-year"></span> Nicolas R.
       </div>
 
       <div class="footer-links">
@@ -1005,6 +1117,6 @@
     </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
