@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-13T00:00:00.000Z",
+  "title": "Design System: atoomic.org — Nicolas R. portfolio",
+  "extensions": {
+    "colorMeta": {
+      "reactor-orange": {
+        "role": "primary",
+        "displayName": "Reactor Orange",
+        "canonical": "#ff6b35",
+        "tonalRamp": [
+          "oklch(0.22 0.10 42)",
+          "oklch(0.32 0.14 42)",
+          "oklch(0.42 0.16 42)",
+          "oklch(0.52 0.17 42)",
+          "oklch(0.62 0.17 42)",
+          "oklch(0.70 0.17 42)",
+          "oklch(0.82 0.12 42)",
+          "oklch(0.93 0.05 42)"
+        ]
+      },
+      "reactor-orange-deep": {
+        "role": "primary",
+        "displayName": "Reactor Orange Deep",
+        "canonical": "#e85a28",
+        "tonalRamp": [
+          "oklch(0.20 0.10 42)",
+          "oklch(0.30 0.14 42)",
+          "oklch(0.40 0.16 42)",
+          "oklch(0.50 0.17 42)",
+          "oklch(0.58 0.17 42)",
+          "oklch(0.66 0.16 42)",
+          "oklch(0.78 0.11 42)",
+          "oklch(0.92 0.05 42)"
+        ]
+      },
+      "reactor-orange-glow": {
+        "role": "primary",
+        "displayName": "Reactor Orange Glow",
+        "canonical": "#ff8559",
+        "tonalRamp": [
+          "oklch(0.24 0.10 42)",
+          "oklch(0.34 0.13 42)",
+          "oklch(0.44 0.15 42)",
+          "oklch(0.54 0.15 42)",
+          "oklch(0.64 0.15 42)",
+          "oklch(0.74 0.15 42)",
+          "oklch(0.84 0.11 42)",
+          "oklch(0.94 0.05 42)"
+        ]
+      },
+      "reactor-orange-wash": {
+        "role": "primary",
+        "displayName": "Reactor Orange Wash",
+        "canonical": "#fff0eb",
+        "tonalRamp": [
+          "oklch(0.96 0.04 42)",
+          "oklch(0.93 0.05 42)",
+          "oklch(0.88 0.07 42)",
+          "oklch(0.80 0.10 42)",
+          "oklch(0.70 0.14 42)",
+          "oklch(0.60 0.16 42)",
+          "oklch(0.45 0.16 42)",
+          "oklch(0.30 0.12 42)"
+        ]
+      },
+      "ember": {
+        "role": "neutral",
+        "displayName": "Ember",
+        "canonical": "#1f1714",
+        "tonalRamp": [
+          "oklch(0.14 0.02 40)",
+          "oklch(0.22 0.025 40)",
+          "oklch(0.30 0.03 40)",
+          "oklch(0.40 0.03 40)",
+          "oklch(0.50 0.035 40)",
+          "oklch(0.62 0.035 40)",
+          "oklch(0.78 0.03 40)",
+          "oklch(0.93 0.02 40)"
+        ]
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#1a1a1a",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.25 0 0)",
+          "oklch(0.37 0 0)",
+          "oklch(0.50 0 0)",
+          "oklch(0.62 0 0)",
+          "oklch(0.74 0 0)",
+          "oklch(0.85 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "graphite-soft": {
+        "role": "neutral",
+        "displayName": "Graphite Soft",
+        "canonical": "#4a4a4a",
+        "tonalRamp": [
+          "oklch(0.18 0 0)",
+          "oklch(0.28 0 0)",
+          "oklch(0.38 0 0)",
+          "oklch(0.48 0 0)",
+          "oklch(0.58 0 0)",
+          "oklch(0.70 0 0)",
+          "oklch(0.82 0 0)",
+          "oklch(0.94 0 0)"
+        ]
+      },
+      "graphite-faint": {
+        "role": "neutral",
+        "displayName": "Graphite Faint",
+        "canonical": "#6a6a6a",
+        "tonalRamp": [
+          "oklch(0.20 0 0)",
+          "oklch(0.30 0 0)",
+          "oklch(0.42 0 0)",
+          "oklch(0.52 0 0)",
+          "oklch(0.62 0 0)",
+          "oklch(0.72 0 0)",
+          "oklch(0.84 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(0.16 0 0)",
+          "oklch(0.30 0 0)",
+          "oklch(0.45 0 0)",
+          "oklch(0.60 0 0)",
+          "oklch(0.75 0 0)",
+          "oklch(0.86 0 0)",
+          "oklch(0.93 0 0)",
+          "oklch(1.00 0 0)"
+        ]
+      },
+      "paper-mist": {
+        "role": "neutral",
+        "displayName": "Paper Mist",
+        "canonical": "#f8f9fa",
+        "tonalRamp": [
+          "oklch(0.18 0.002 250)",
+          "oklch(0.30 0.003 250)",
+          "oklch(0.44 0.004 250)",
+          "oklch(0.58 0.004 250)",
+          "oklch(0.72 0.004 250)",
+          "oklch(0.84 0.003 250)",
+          "oklch(0.93 0.002 250)",
+          "oklch(0.99 0 0)"
+        ]
+      },
+      "paper-line": {
+        "role": "neutral",
+        "displayName": "Paper Line",
+        "canonical": "#e9ecef",
+        "tonalRamp": [
+          "oklch(0.20 0.003 250)",
+          "oklch(0.32 0.004 250)",
+          "oklch(0.46 0.005 250)",
+          "oklch(0.60 0.005 250)",
+          "oklch(0.74 0.004 250)",
+          "oklch(0.85 0.003 250)",
+          "oklch(0.93 0.002 250)",
+          "oklch(0.99 0 0)"
+        ]
+      },
+      "gold": {
+        "role": "secondary",
+        "displayName": "Gold",
+        "canonical": "#d4a017",
+        "tonalRamp": [
+          "oklch(0.25 0.06 85)",
+          "oklch(0.38 0.10 85)",
+          "oklch(0.50 0.12 85)",
+          "oklch(0.60 0.14 85)",
+          "oklch(0.70 0.15 85)",
+          "oklch(0.80 0.13 85)",
+          "oklch(0.88 0.09 85)",
+          "oklch(0.95 0.04 85)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The hero title only — 'Nicolas R.'" },
+      "headline": { "displayName": "Headline", "purpose": "Section titles, orange with a leading icon." },
+      "title": { "displayName": "Title", "purpose": "Timeline roles and card headings." },
+      "body": { "displayName": "Body", "purpose": "About, writing, contact prose. 18px / 1.8; base 16px / 1.7. Cap 65–75ch." },
+      "label": { "displayName": "Label", "purpose": "Skill tags and nav links." }
+    },
+    "shadows": [
+      { "name": "shadow-sm", "value": "0 2px 8px rgba(0,0,0,0.08)", "purpose": "Resting state: sticky header, secondary button." },
+      { "name": "shadow-md", "value": "0 4px 16px rgba(0,0,0,0.12)", "purpose": "Resting state: cards, primary button." },
+      { "name": "shadow-lg", "value": "0 8px 24px rgba(0,0,0,0.15)", "purpose": "Hover lift on cards and buttons." },
+      { "name": "orange-glow", "value": "0 4px 20px rgba(255,107,53,0.25), 0 0 0 8px rgba(255,107,53,0.1)", "purpose": "Profile photo halo and colored hover glow." },
+      { "name": "stage-shadow", "value": "0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.08)", "purpose": "Resting depth of AI cards against the Ember backdrop." }
+    ],
+    "motion": [
+      { "name": "transition-default", "value": "all 0.3s ease", "purpose": "Default state transitions (--transition)." },
+      { "name": "ease-stage", "value": "cubic-bezier(0.25, 0.46, 0.45, 0.94)", "purpose": "AI card hover — confident, slightly decelerated lift." },
+      { "name": "reveal-fade", "value": "opacity 0.6s ease-out, transform 0.6s ease-out", "purpose": "IntersectionObserver scroll reveal (translateY 20px → 0)." },
+      { "name": "reveal-stage", "value": "opacity 0.7s ease-stage, transform 0.7s ease-stage", "purpose": "AI card reveal (translateY 40px scale 0.97 → 0), staggered 0.2s." },
+      { "name": "type-hero", "value": "steps(1) 60ms", "purpose": "Self-typing hero role; cursor blinks at 0.7s step-end." },
+      { "name": "shimmer", "value": "background-position 1.5s ease infinite", "purpose": "AI card top shimmer bar on hover." },
+      { "name": "reduced-motion", "value": "* { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }", "purpose": "prefers-reduced-motion: near-instant fallback for every animation." }
+    ],
+    "breakpoints": [
+      { "name": "lg", "value": "1024px", "purpose": "Container padding widens; section padding eases to 60px." },
+      { "name": "md", "value": "768px", "purpose": "Stack to single column; hero CTA goes full-width vertical." },
+      { "name": "sm", "value": "480px", "purpose": "Nav wraps; timeline item stacks logo above content." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main CTA — Reactor Orange fill, leading icon, lifts with an orange glow on hover.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#resume\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><polyline points=\"7 10 12 15 17 10\"/><line x1=\"12\" y1=\"15\" x2=\"12\" y2=\"3\"/></svg>Download Resume</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; background: var(--orange-primary, #ff6b35); color: #fff; font-size: 16px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,0.12); transition: all 0.3s ease; } .ds-btn-primary:hover { background: var(--orange-dark, #e85a28); transform: translateY(-2px) scale(1.02); box-shadow: 0 8px 24px rgba(0,0,0,0.15); } .ds-btn-primary:active { transform: translateY(0) scale(1); } .ds-btn-primary:focus-visible { outline: 3px solid var(--orange-primary, #ff6b35); outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Paper fill with a 2px orange border; inverts to orange-on-white on hover.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#contact\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"/><polyline points=\"22,6 12,13 2,6\"/></svg>Contact</a>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; background: #fff; color: var(--orange-primary, #ff6b35); border: 2px solid var(--orange-primary, #ff6b35); font-size: 16px; font-weight: 600; text-decoration: none; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s ease; } .ds-btn-secondary:hover { background: var(--orange-primary, #ff6b35); color: #fff; transform: translateY(-2px) scale(1.02); box-shadow: 0 4px 16px rgba(0,0,0,0.12); } .ds-btn-secondary:focus-visible { outline: 3px solid var(--orange-primary, #ff6b35); outline-offset: 3px; }"
+    },
+    {
+      "name": "Skill Tag",
+      "kind": "chip",
+      "refersTo": "skill-tag",
+      "description": "Pill chip — orange wash fill, orange text; inverts to solid orange on hover.",
+      "html": "<span class=\"ds-skill-tag\">Agentic Orchestration</span>",
+      "css": ".ds-skill-tag { display: inline-block; background: rgba(255,107,53,0.1); color: var(--orange-primary, #ff6b35); padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; border: 1px solid transparent; transition: all 0.3s ease; } .ds-skill-tag:hover { background: var(--orange-primary, #ff6b35); color: #fff; transform: translateY(-2px) scale(1.05); box-shadow: 0 4px 12px rgba(255,107,53,0.3); }"
+    },
+    {
+      "name": "Timeline Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Paper card on the experience rail; lifts with a soft orange-tinted shadow on hover.",
+      "html": "<div class=\"ds-card\"><h3 class=\"ds-card-title\">WordPress Department Manager</h3><p class=\"ds-card-date\">September 2025 – Present</p><ul class=\"ds-card-list\"><li>Bring together WebPros teams building WP Squared, WordPress Toolkit, and Nova AI.</li></ul></div>",
+      "css": ".ds-card { background: #fff; padding: 28px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); transition: all 0.3s ease; } .ds-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.15); background: linear-gradient(135deg, rgba(255,107,53,0.02), #fff); } .ds-card-title { font-size: 24px; font-weight: 700; color: var(--text-dark, #1a1a1a); } .ds-card-date { color: var(--text-light, #6a6a6a); font-size: 16px; margin: 4px 0 16px; } .ds-card-list { list-style: none; padding: 0; margin: 0; } .ds-card-list li { padding-left: 24px; position: relative; margin-bottom: 12px; color: var(--text-medium, #4a4a4a); line-height: 1.7; } .ds-card-list li::before { content: '→'; position: absolute; left: 0; color: var(--orange-primary, #ff6b35); font-weight: 700; }"
+    },
+    {
+      "name": "AI Capability Card",
+      "kind": "card",
+      "refersTo": "card-ai",
+      "description": "Signature featured card on the Ember stage — ghost step-number, top shimmer bar, heavier resting shadow. NOTE: the source border-left stripe is a known ban; the top shimmer bar is the sanctioned accent.",
+      "html": "<div class=\"ds-ai-card\"><span class=\"ds-ai-step\" aria-hidden=\"true\">01</span><div class=\"ds-ai-icon\"><svg viewBox=\"0 0 24 24\" width=\"32\" height=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83\"/></svg></div><h3 class=\"ds-ai-title\">Agentic Orchestration</h3><p class=\"ds-ai-body\">Multi-agent systems that decompose tasks and deliver reliable outcomes at scale.</p></div>",
+      "css": ".ds-ai-card { position: relative; overflow: hidden; background: rgba(255,255,255,0.95); padding: 36px 32px 32px; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.4s ease; } .ds-ai-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--orange-primary,#ff6b35), var(--orange-light,#ff8559), var(--orange-primary,#ff6b35)); background-size: 200% 100%; opacity: 0.5; } .ds-ai-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 8px 24px rgba(255,107,53,0.12); } .ds-ai-card:hover::before { opacity: 1; animation: ds-shimmer 1.5s ease infinite; } @keyframes ds-shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } } .ds-ai-step { position: absolute; top: 16px; right: 20px; font-size: 48px; font-weight: 800; color: rgba(255,107,53,0.08); letter-spacing: -0.04em; line-height: 1; pointer-events: none; user-select: none; } .ds-ai-icon { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, rgba(255,107,53,0.12), rgba(255,107,53,0.06)); border: 1px solid rgba(255,107,53,0.15); display: flex; align-items: center; justify-content: center; color: var(--orange-primary, #ff6b35); margin-bottom: 24px; transition: all 0.4s cubic-bezier(0.25,0.46,0.45,0.94); } .ds-ai-card:hover .ds-ai-icon { transform: scale(1.1) rotate(-3deg); background: linear-gradient(135deg, var(--orange-primary,#ff6b35), var(--orange-light,#ff8559)); color: #fff; box-shadow: 0 4px 16px rgba(255,107,53,0.3); } .ds-ai-card:hover .ds-ai-icon svg { stroke: #fff; } .ds-ai-title { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; color: var(--text-dark, #1a1a1a); margin: 0 0 12px; } .ds-ai-body { font-size: 15px; line-height: 1.7; color: var(--text-medium, #4a4a4a); margin: 0; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Contact form field — 2px Paper Line border that shifts to orange with a soft ring on focus.",
+      "html": "<label class=\"ds-input-label\" for=\"ds-name\">Name</label><input class=\"ds-input\" id=\"ds-name\" type=\"text\" placeholder=\"Your name\" />",
+      "css": ".ds-input-label { display: block; font-weight: 600; color: var(--text-dark, #1a1a1a); margin-bottom: 8px; } .ds-input { width: 100%; padding: 12px 16px; border: 2px solid var(--bg-grey, #e9ecef); border-radius: 8px; background: #fff; color: var(--text-dark, #1a1a1a); font-size: 16px; font-family: inherit; transition: all 0.3s ease; } .ds-input::placeholder { color: var(--text-light, #6a6a6a); opacity: 0.6; } .ds-input:hover { border-color: rgba(255,107,53,0.3); } .ds-input:focus { outline: none; border-color: var(--orange-primary, #ff6b35); box-shadow: 0 0 0 4px rgba(255,107,53,0.12); transform: translateY(-1px); }"
+    },
+    {
+      "name": "Sticky Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Glassy Paper header, 98% opacity + blur; gold ☢ + orange wordmark; links underline-from-left in orange.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-logo\" href=\"#hero\"><span class=\"ds-nav-symbol\" aria-hidden=\"true\">☢</span><span class=\"ds-nav-word\">atoomic</span></a><ul class=\"ds-nav-links\"><li><a href=\"#about\">About</a></li><li><a href=\"#experience\">Experience</a></li><li><a href=\"#contact\">Contact</a></li></ul></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 20px 24px; background: rgba(255,255,255,0.98); backdrop-filter: blur(12px); box-shadow: 0 2px 8px rgba(0,0,0,0.08); } .ds-nav-logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; } .ds-nav-symbol { color: #d4a017; font-size: 36px; line-height: 1; } .ds-nav-word { font-size: 22px; font-weight: 800; color: var(--orange-primary, #ff6b35); letter-spacing: -0.03em; } .ds-nav-links { display: flex; list-style: none; gap: 32px; margin: 0; padding: 0; } .ds-nav-links a { position: relative; color: var(--text-medium, #4a4a4a); text-decoration: none; font-weight: 500; transition: color 0.3s ease; } .ds-nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--orange-primary, #ff6b35); transition: width 0.3s ease; } .ds-nav-links a:hover { color: var(--orange-primary, #ff6b35); } .ds-nav-links a:hover::after { width: 100%; } .ds-nav-links a:focus-visible { outline: 2px solid var(--orange-primary, #ff6b35); outline-offset: 4px; border-radius: 4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The High-Voltage Stage",
+    "overview": "This portfolio is a lit stage where a career runs as current. Reactor Orange (#ff6b35) is the live wire — not an accent sprinkled on white, but the charge that powers the page. Where the orange earns surface, it takes it; neutrals are the stage, not the act. Density is comfortable, not crowded. Light surfaces alternate Paper and Paper Mist until the AI Capabilities section drops to Ember (#1f1714), a warm near-black — the stage going dark for the headline act. Type is one confident system-sans family worked across a wide weight range and a fluid clamp() scale. Every surface is tactile and confident: buttons press, cards lift on a colored glow, the hero types itself in. The system rejects the Generic SaaS/AI template, the stock green-on-black developer portfolio, corporate beige/gray, and empty minimalism.",
+    "keyCharacteristics": [
+      "One live-wire accent — Reactor Orange — carries CTAs, links, headings, focus rings, and the hero role.",
+      "Single-family system-sans typography, hierarchy via weight and fluid clamp() scale.",
+      "Hybrid elevation: soft floating shadows on light surfaces; one dark tonal contrast (Ember) for the AI section.",
+      "Tactile, confident motion — hover lifts, colored orange glows, a self-typing hero.",
+      "Color-drenched permission: the orange may own 30–60% of hero/feature surfaces; never a 1px stripe."
+    ],
+    "rules": [
+      { "name": "The Live-Wire Rule", "body": "Reactor Orange is the only saturated hue. It carries every CTA, link, heading accent, focus ring, and the timeline rail. Neutrals never compete; when the orange appears, it is the signal.", "section": "colors" },
+      { "name": "The Drench Permission", "body": "On hero and feature surfaces the orange may own 30–60% of the visible area. It is never reduced to a 1px stripe or a faint tint where a real surface is warranted.", "section": "colors" },
+      { "name": "The Single-Family Rule", "body": "One system-sans family across every role. Hierarchy is weight + scale, never a second typeface.", "section": "typography" },
+      { "name": "The Fluid-Scale Rule", "body": "Every heading uses clamp() so type breathes across viewports without breakpoint jumps. Display ceiling ≤ 6rem; letter-spacing floor ≥ −0.04em.", "section": "typography" },
+      { "name": "The Responsive-Shadow Rule", "body": "Light-surface cards sit on Shadow SM/MD at rest and lift to Shadow LG with a colored orange glow on hover. Shadows respond to interaction, not ambient decoration — except AI cards, whose heavier resting shadow marks them as the headline act.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do let Reactor Orange own real surface area on hero and feature moments (Committed/Drenched strategy) — it is voice, not decoration.",
+      "Do keep body text at Graphite Soft (#4a4a4a, ≥ 4.5:1); reserve Graphite Faint for non-essential metadata only.",
+      "Do honor prefers-reduced-motion with instant/crossfade fallbacks — the typing hero, scroll reveals, and shimmer all already do.",
+      "Do use fluid clamp() scales for every heading; lift cards on hover with a colored orange glow.",
+      "Do mark focus with a 2–3px Reactor Orange outline at 3–4px offset.",
+      "Do consider a distinctive display typeface as the next craft lever — the single-family stack is honest but undersells the 'how was this made?' goal."
+    ],
+    "donts": [
+      "Don't use border-left/border-right greater than 1px as a colored stripe. (The current AI card border-left: 4px violates this — rewrite as the top shimmer bar, a tinted background, or a leading number/icon.)",
+      "Don't reach for the Generic SaaS/AI template: indigo-to-violet gradient heroes, glassy feature-card grids, 'trusted by' logo strips, or the big-number hero-metric template.",
+      "Don't dress the site as a terminal — green-on-black, matrix rain, or code snippets as decoration (Stock 'developer portfolio').",
+      "Don't default to beige/gray muted neutrals; they read as forgettable and fight the orange (Corporate beige/gray).",
+      "Don't ship empty minimalism — no imagery, no texture, acres of whitespace that read as unfinished (Overly minimal/empty).",
+      "Don't introduce a second saturated hue; Reactor Orange is the only one. Gold stays on the ☢ mark alone.",
+      "Don't animate layout properties (width/height/top); use transform, opacity, blur, clip-path, and shadow/glow instead.",
+      "Don't gate content visibility on a class-triggered transition with no visible default — reveals must enhance an already-visible state."
+    ]
+  }
+}
