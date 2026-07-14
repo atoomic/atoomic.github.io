@@ -1097,6 +1097,12 @@ button {
   margin-top: 9px;
 }
 
+.role-copy a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .skills-layout {
   display: grid;
   grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
