@@ -369,3 +369,74 @@ contactForm.addEventListener("submit", (event) => {
 });
 
 currentYear.textContent = String(new Date().getFullYear());
+
+// ── Delight ──────────────────────────────────────────────────────────────
+// Two low-key, on-brand touches for the curious visitor and the technical peer
+// who opens devtools. None of it touches the default hiring-manager scan.
+
+// 1) Console hello — rewards source inspection, reinforces "engineered, not
+//    costumed." Text-only, so it is unaffected by prefers-reduced-motion.
+(function consoleHello() {
+  if (typeof console === "undefined" || typeof console.log !== "function") {
+    return;
+  }
+
+  console.log(
+    "%c☢ atoomic.org",
+    "color:#f5c518;font-weight:800;font-size:15px;line-height:1.7;"
+  );
+  console.log(
+    "%cHigh-voltage portfolio of Nicolas R. — agentic orchestration & systems engineering.\nInspecting the source? Good instincts. → atoomic.org/#contact",
+    "color:#a9b0bc;font-size:12px;line-height:1.5;"
+  );
+})();
+
+// 2) Konami code → the ☢ reactor "goes critical": a one-shot gold flare on the
+//    brand mark, plus a themed console line. Hidden reward; never affects the
+//    default experience. The flare is a CSS animation, so prefers-reduced-motion
+//    collapses it to a single frame automatically.
+(function konamiCritical() {
+  const sequence = [
+    "ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown",
+    "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight",
+    "b", "a"
+  ];
+  const brandMark = document.querySelector(".brand-mark");
+
+  if (!brandMark) {
+    return;
+  }
+
+  let progress = 0;
+
+  document.addEventListener("keydown", (event) => {
+    const expected = sequence[progress];
+    const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
+
+    if (key === expected) {
+      progress += 1;
+
+      if (progress === sequence.length) {
+        progress = 0;
+        goCritical();
+      }
+    } else {
+      // Wrong key — restart, unless this key is itself the start of the sequence.
+      progress = key === sequence[0] ? 1 : 0;
+    }
+  });
+
+  function goCritical() {
+    brandMark.classList.remove("critical");
+    // Force a reflow so the flare animation restarts on repeated triggers.
+    void brandMark.offsetWidth;
+    brandMark.classList.add("critical");
+
+    if (typeof console !== "undefined" && typeof console.log === "function") {
+      console.log(
+        "%c☢ Reactor critical — welcome, fellow curious mind.",
+        "color:#f5c518;font-weight:800;font-size:13px;"
+      );
+    }
+  }
+})();

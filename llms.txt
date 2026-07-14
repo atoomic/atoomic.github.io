@@ -1,0 +1,21 @@
+# Nicolas R. (atoomic)
+
+> Nicolas R. — known online as atoomic — is a technology leader specializing in agentic orchestration, AI-assisted engineering, and resilient Perl/CPAN systems. He leads a department at WebPros and is a long-time open-source contributor to the Perl toolchain. This is his personal portfolio at https://atoomic.org/.
+
+## Profile & expertise
+- [Home](https://atoomic.org/): Technology leader building agentic systems, AI-assisted engineering workflows, and resilient platforms.
+- [About](https://atoomic.org/#about): Depth in systems engineering combined with direction in AI delivery.
+- [Capabilities](https://atoomic.org/#capabilities): Agentic orchestration, AI-assisted development, and RAG & knowledge systems.
+- [Skills](https://atoomic.org/#skills): Languages and runtimes (Perl, Python, C, XS, JavaScript, PHP, Swift), AI tooling, frameworks, and infrastructure.
+- [Experience](https://atoomic.org/#experience): Leadership and architecture roles across hosting, platforms, and innovation.
+- [FAQ](https://atoomic.org/#faq): Frequently asked questions about Nicolas R.'s work and how to reach him.
+
+## Open source
+- [GitHub — atoomic](https://github.com/atoomic): Source repositories and projects.
+- [MetaCPAN — ATOOMIC](https://metacpan.org/author/ATOOMIC): Published Perl modules on CPAN.
+
+## Links
+- [LinkedIn](https://www.linkedin.com/in/nicolas-rochelemagne-71b4722/)
+- [X — atoomic](https://x.com/atoomic)
+- [Résumé (PDF)](https://raw.githubusercontent.com/atoomic/atoomic.github.io/master/n_rochelemagne-resume.pdf)
+- [Contact](https://atoomic.org/#contact)
